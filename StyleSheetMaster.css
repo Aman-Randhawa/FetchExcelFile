@@ -1,0 +1,32 @@
+﻿body {
+}
+#all {
+    width: 1000px;
+    border: 2px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    height: 100px;
+    font-size: x-large;
+    color: #FF0000;
+    background-color: #e28743;
+}
+
+#left {
+    width: 250px;
+    border: hidden, 1px, solid;
+    background-color: black;
+    float: left;
+}
+
+#right {
+    margin-left: 255px;
+   margin-top:0px;
+}
+
+#footer {
+    clear: left;
+    height: 100px;
+}

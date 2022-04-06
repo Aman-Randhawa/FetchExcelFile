@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="HSP_Loader.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="StyleSheetMaster.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            color: #000;
+        }
+       
+       
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id = "all">
+        
+     <div id ="header" >
+      
+        Attune Hearing
+     </div>
+        <div id ="left" >
+            <table style="width:100%;">
+                  <tr>
+                    <td>
+                        <asp:Button ID="Button2" style="width:245px" runat="server" Text="Upload an Excel File" OnClick="Button2_Click1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="Button1" style="width:245px" runat="server" Text="Daily Revenue Total" OnClick="Button1_Click" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Button ID="BtnStateTotal" style="width:245px" runat="server" Text="Total Per State" OnClick="Button2_Click" />
+                    </td>
+                </tr>
+
+            </table>
+      
+        </div>
+    <div id ="right" ><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+  <h1>Welcome to Revenue to Section</h1>
+       
+        </asp:ContentPlaceHolder></div>
+    <div id ="footer" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <span class="field">Source: Excel File
+     </span>
+        <br />
+</div>
+    </div>
+        <p>
+        &nbsp;</p>
+    </form>
+</body>
+</html>
